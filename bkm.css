@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 4px 8px #00000033;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h1 {
+    color: #08c0d8;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; 
+    width: 100%; 
+}
+
+.form input {
+    padding: 10px;
+    width: 40%; 
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid #8d9091;
+}
+
+.form input:hover {
+    
+    border: 2px solid green;
+}
+
+.form input:focus {
+    border: 2px solid #0000ff;
+}
+
+.form button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 13%; 
+
+}
+
+.form button:hover {
+    background-color: #445fb6;
+}
+.icon i {
+    font-size: 90%;
+    margin: 15px;
+    color: #0000ff;
+}
+h1{
+    color: #0000ff;
+
+}
+
+.bookmark {
+    
+    text-align: center;
+    color: #474444;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #00000033;
+   
+}
+
+#bookmarksList {
+
+   display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 15px;
+    width: 80%;
+    margin-top: 20px;
+
+}
+
+/* .fas {
+    margin: 0 10px;
+    font-size: small;
+} */
+
+.container .fas {
+    font-size: 2rem;
+}
+
+#urlError, #nameError {
+    color: #ff0000;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .form input {
+        width: 45%; 
+    }
+
+    .form button {
+        width: 25%;  
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .form input {
+        width: 40%;  
+    }
+
+    .form button {
+        width: 25%; 
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+.edit{
+    background-color: #00db00;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 3px;
+    width: 90px;
+    border: none;
+
+    
+}
+.delete{
+    background-color: red;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 3px;
+    width: 90px;
+    margin: 15px;
+    border: none;
+}
